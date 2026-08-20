@@ -6,6 +6,7 @@ Download media as MP3 or MP4 from various platforms (YouTube, TikTok, Instagram 
 
 ## Windows
 
+[Download MediaDownloader for Windows](https://github.com/DebianEnjoyer/MediaDownloader/releases/latest/download/MediaDownloader.exe)
 Download the `.exe` file and run it.
 
 The application is currently unsigned, so Windows SmartScreen may display a warning when launching it.
