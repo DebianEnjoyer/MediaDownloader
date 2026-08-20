@@ -7,8 +7,15 @@ from media import download_video
 import threading
 import os
 import sys
+import ctypes
 
 customtkinter.set_appearance_mode("dark")
+
+if sys.platform.startswith("win"):
+    try:
+        ctypes.windll.shcore.SetProcessDpiAwareness(1)
+    except Exception:
+        pass
 
 def resource_path(relative_path):
     if hasattr(sys, "_MEIPASS"):
