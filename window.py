@@ -53,14 +53,20 @@ def button_event():
         return        
 
     format_type = segmented_button_var.get()
+    playlist = playlist_var.get()
     progresslabel.configure(text="0%")
 
-    thread = threading.Thread(target=download_video, args=(url, selected_folder, format_type, update_progress))
+    thread = threading.Thread(target=download_video, args=(url, selected_folder, format_type, playlist, update_progress))
     thread.start()
   
 
 def segmented_button_callback(value):
     destination_label_mp.configure(text=f"Currently selected: {value}")
+
+def playlist_button_callback(value):
+    playlist_selected_label.configure(
+        text=f"Do you want playlist: {value} "
+    )
 
 def select_destination():
     global selected_folder
@@ -77,7 +83,7 @@ def update_progress(d):
             percent = int(downloaded / total * 100)
             progresslabel.configure(text=f"{percent}%")
     elif d['status'] == 'finished':
-        progresslabel.configure(text="100%") 
+        progresslabel.configure(text="100%")
 
 
 ascii_art = """ __  __          _ _       
@@ -99,6 +105,12 @@ segmented_button_var = customtkinter.StringVar(value="mp3")
 segmented_button = customtkinter.CTkSegmentedButton(root, values=["mp3", "mp4"],selected_color="#22D3EE",selected_hover_color="#0E7490",command=segmented_button_callback, variable=segmented_button_var, width=200)
 segmented_button.place(x=670, y=270, anchor="center")
 
+
+playlist_var = customtkinter.StringVar(value="No")
+playlist_button = customtkinter.CTkSegmentedButton(root,values=["Yes", "No"],selected_color="#22D3EE",selected_hover_color="#0E7490",command=playlist_button_callback,variable=playlist_var,width=200)
+playlist_button.place(x=670, y=320, anchor="center")
+
+
 destination_label_mp = customtkinter.CTkLabel(root, text=f"Currently selected: {segmented_button_var.get()}")
 destination_label_mp.place(x=670, y=570, anchor="center")
 
@@ -110,6 +122,10 @@ buttonselect.place(x=100, y=270, anchor="center")
 
 destination_label = customtkinter.CTkLabel(root, text="No folder selected")
 destination_label.place(x=120, y=570, anchor="center")
+
+
+playlist_selected_label = customtkinter.CTkLabel(root,text=f"Do you want playlist: {playlist_var.get()} ")
+playlist_selected_label.place(x=670, y=545, anchor="center")
 
 progresslabel = customtkinter.CTkLabel(root, text="0%")
 progresslabel.place(x=400,y=550)
