@@ -14,6 +14,7 @@ The application is currently unsigned, so Windows SmartScreen may display a warn
 ## Linux
 
 Download the `.AppImage` file and make it executable:
+[Download MediaDownloader for Linux](https://github.com/DebianEnjoyer/MediaDownloader/releases/latest/download/MediaDownloader-x86_64.AppImage)
 
 ```bash
 chmod +x MediaDownloader-x86_64.AppImage
