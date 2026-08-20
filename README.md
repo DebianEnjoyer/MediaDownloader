@@ -16,13 +16,17 @@ Download single videos or full playlists.
 
 ## Supported Platforms
 
+MediaDownloader supports a wide range of websites through yt-dlp.
+
 Tested with:
 
 - YouTube
 - TikTok
 - Instagram Reels
+- Reddit
+- Websites with directly accessible media
 
-More platforms may work through yt-dlp.
+Many other websites supported by yt-dlp may also work.
 
 ## Windows
 
