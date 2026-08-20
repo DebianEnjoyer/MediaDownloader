@@ -15,7 +15,7 @@ Download media as MP3 or MP4 from various platforms (YouTube, TikTok, Instagram 
 
 
 Download the `.exe` file and run it.
-
+The application is currently unsigned, so Windows SmartScreen may display a warning when launching it.
 
 
 \## Linux
