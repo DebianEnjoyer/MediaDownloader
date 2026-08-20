@@ -25,7 +25,7 @@ After downloading, make the `.AppImage` executable:
 chmod +x MediaDownloader-x86_64.AppImage
 ```
 
-Then run it from desktop or terminal:
+Then run it from your desktop or terminal:
 
 ```bash
 ./MediaDownloader-x86_64.AppImage
