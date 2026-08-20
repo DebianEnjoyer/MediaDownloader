@@ -4,7 +4,7 @@ Simple open-source application for Windows and Linux.
 
 Download media as MP3 or MP4 from various platforms (YouTube, TikTok, Instagram Reels, etc.).
 
-Download single videos or full playlists
+Download single videos or full playlists.
 
 
 ## Windows
