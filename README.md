@@ -6,6 +6,23 @@ Download media as MP3 or MP4 from various platforms (YouTube, TikTok, Instagram 
 
 Download single videos or full playlists.
 
+## Features
+
+- MP3 and MP4 downloads
+- Single video downloads
+- Full playlist downloads
+- Playlist toggle
+- Windows and Linux support
+
+## Supported Platforms
+
+Tested with:
+
+- YouTube
+- TikTok
+- Instagram Reels
+
+More platforms may work through yt-dlp.
 
 ## Windows
 
@@ -30,3 +47,40 @@ Then run it from your desktop or terminal:
 ```bash
 ./MediaDownloader-x86_64.AppImage
 ```
+
+## Built With
+
+- Python
+- yt-dlp
+- FFmpeg
+- CustomTkinter
+
+## Running from Source
+
+Clone the repository and install the dependencies:
+
+```bash
+pip install -r requirements.txt
+```
+
+Then run the application:
+
+```bash
+python window.py
+```
+
+On Linux, use:
+
+```bash
+python3 window.py
+```
+
+## Bug Reports
+
+Found a bug or something isn't working as expected?
+
+Please open an issue and describe the problem.
+
+## License
+
+This project is licensed under the MIT License.
