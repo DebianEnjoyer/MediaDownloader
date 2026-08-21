@@ -28,6 +28,12 @@ Tested with:
 
 Many other websites supported by yt-dlp may also work.
 
+## Screenshot
+
+![MediaDownloader](assets/MediaDownloader-screenshot.png)
+
+
+
 ## Windows
 
 [**Download MediaDownloader for Windows**](https://github.com/DebianEnjoyer/MediaDownloader/releases/latest/download/MediaDownloader.exe)
